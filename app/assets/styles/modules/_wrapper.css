@@ -18,6 +18,10 @@
         max-width: 2000px;
     }
 
+    &--narrow {
+        max-width: 50rem;
+    }
+
     &--no-padding-until-medium {
         padding-left: 0;
         padding-right: 0;
