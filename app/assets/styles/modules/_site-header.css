@@ -10,7 +10,13 @@
     }
 
     @mixin atMedium {
+        position: fixed;
         background-color: rgba($mainBlue, .3);
+
+        &--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
+
     }
 
     &__btn-container {
@@ -23,7 +29,9 @@
     &__logo {
         top: 0;
         left: 50%;
+        transition: transform .3s ease-out;
         transform: translateX(-50%);
+        transform-origin: 50% 0;
         position: absolute;
         background-color: $mainBlue;
         padding: .8rem 1.2rem;
@@ -32,6 +40,11 @@
             left: auto;
             transform: translateX(0);
             padding: 1.6rem 2.3rem;
+
+            .site-header--dark & {
+                transform: scale(.55);
+                padding: 0, 0;
+            }
         }
     }
 
