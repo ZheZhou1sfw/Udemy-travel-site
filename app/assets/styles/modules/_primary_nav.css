@@ -1,0 +1,62 @@
+.primary-nav {
+
+    padding-top: .66rem;
+    
+    @mixin atMedium {
+        padding-top: 0;
+    }
+
+    &--pull-right {
+        
+        @mixin atMedium {
+            float: right;
+        }
+        
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        @mixin clearfix {
+            
+        }
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        padding-right: .4rem;
+        
+        
+
+        @mixin atMedium {
+            padding-right: 1.25rem;
+            float:left;
+            display: block;
+        }
+    }
+
+    li:last-child {
+        padding-right: 0;
+        @mixin atMedium {
+            padding-right: 1.25rem;
+        }
+    }
+
+    a {
+
+        color: #FFF;
+        font-weight: 300;
+        text-decoration: none;
+        display: block;
+        padding: .33rem .5;
+        font-size: .8rem;
+        background-color: rgba($mainBlue, .5);
+
+        @mixin atMedium {
+            padding: .75rem 0;
+            font-size: 1rem;
+            background-color: transparent;
+        }
+    }
+}

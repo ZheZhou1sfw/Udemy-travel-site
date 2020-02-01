@@ -17,4 +17,12 @@
             font-size: 1.25rem;
         }
     }
+
+    &--margin-t-large {
+        margin-top: 1.3rem;
+
+        @mixin atMedium {
+            margin-top: 0;
+        }
+    }
 }
